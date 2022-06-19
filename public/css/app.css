@@ -1,0 +1,503 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    /* 
+    #142851 blue navy
+    #85CEFF blue sky
+    #C7F0E3 green
+    #D0D0D0 grey
+    #FFFFFF white
+    #000000 black
+     */
+}
+body {
+    margin: 0;
+    background-color: #ECECEC;
+}
+h3 {
+    font-size: 50px;
+    margin: 0;
+}
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17vw;
+    height: 100vh;
+    background-color: #142851;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo {
+    width: 50%;
+    height: 8%;
+}
+.navbar-logo h1 {
+    color: #C7F0E3;
+}
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 20%;
+}
+.navbar-menu a {
+    color: #FFFFFF;
+}
+.navbar-logout {
+    width: 50%;
+    height: 8%;
+}
+.navbar-logout a {
+    color: #FFFFFF;
+}
+
+/* bodycontent */
+.bodycontent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 83vw;
+    height: 100vh;
+}
+/* dashboard */
+.dashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboardgrid {
+    width: 97%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 0.72fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas:    "dsbd0 dsbd0 dsbd0"
+                            "dsbd1 dsbd1 dsbd2"
+                            "dsbd3 dsbd4 dsbd4";
+    grid-gap: 1.5rem;
+}
+.dsbd0 {
+    grid-area: dsbd0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dsbd1 {
+    grid-area: dsbd1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dsbd-title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dsbd-info {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dsbd-infoAct {
+    width: 100%;
+    height: 90%;
+}
+.dsbd-infoActu {
+    width: 100%;
+    height: 90%;
+}
+.dsbd1-info {
+    width: 33%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.dsbd1-info:nth-child(1) {
+    background-color: #C7F0E3;
+}
+.dsbd1-info:nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #85CEFF;
+}
+.dsbd1-info:nth-child(3) {
+    background-color: #142851;
+    color: #FFFFFF;
+}
+.dsbd2 {
+    grid-area: dsbd2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dsbd-infoUser {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cardUser {
+    width: 90%;
+    height: 27%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.cardUser h2 {
+    margin-left: 2rem;
+    font-size: 20px;
+}
+.cardUser:nth-child(2) {
+    margin: 1rem 0;
+}
+
+.dsbd3 {
+    grid-area: dsbd3;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #C7F0E3;
+}
+
+.dsbd3-title {
+    padding-left: 1rem;
+}
+
+.dsbd3-info {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dsbd3-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 35%;
+    margin: 0.5rem 1rem;
+    background-color: #FFFFFF;
+}
+
+.dsbd3-cardh2 {
+    color: #000000;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.dsbd4 {
+    grid-area: dsbd4;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #85CEFF;
+}
+.dsbd4-title {
+    padding-left: 1rem;
+    color: #FFFFFF;
+}
+
+.dsbd4-info {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.dsbd4-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 35%;
+    margin: 0.5rem 1rem;
+    background-color: #FFFFFF;
+}
+
+.dsbd4-cardh2 {
+    color: #000000;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.btnCard {
+    width: 25%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85CEFF;
+    color: #FFFFFF;
+    padding: 0.5rem 0.25rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.btnCard a {
+    color: #FFFFFF;
+}
+.btnCard2 {
+    width: 25%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142851;
+    color: #FFFFFF;
+    padding: 0.5rem 0.25rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.btnCard2 a {
+    color: #FFFFFF;
+}
+
+/* activité */
+
+.btnPrimary {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: #85CEFF;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.activity {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-activity {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    width: 23%;
+    height: 40%;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-card h2 {
+    margin: 0;
+}
+
+/* activity detail */
+
+.activitydetail {
+    width: 100%;
+    height: 100%;
+}
+
+.activitydetail-img {
+    width: 100%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.activitydetail-img a {
+    color: #FFFFFF;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+.activitydetail-form {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-activity {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-activity textarea {
+    width: 80%;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #142851;
+    background-color: #ECECEC;
+}
+.formactivity-content {
+    height: 25%;
+}
+.form-activity input {
+    display: none;
+}
+
+.btnmodif {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    padding: 0.75rem 1rem;
+    background-color: orange;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.btnsupp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1rem;
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* .activityForm-back {
+    color: #142851;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+} */
+.actuform {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.actualityform {
+    width: 100%;
+    height: 5%;
+}
+.actualityform a {
+    color: #142851;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.actualityform-form {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-actu {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-actu input {
+    width: 80%;
+    height: 10%;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #142851;
+    background-color: #ECECEC;
+}
+.form-actu textarea {
+    width: 80%;
+    height: 25%;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #142851;
+    background-color: #ECECEC;
+}
+
+.btnadd {
+    padding: 0.75rem 1rem;
+    background-color: #85CEFF;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.form-acti {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-acti input {
+    width: 80%;
+    height: 10%;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #142851;
+    background-color: #ECECEC;
+}
+.form-acti textarea {
+    width: 80%;
+    height: 25%;
+    margin: 0.5rem 0;
+    border: none;
+    border-bottom: 2px solid #142851;
+    background-color: #ECECEC;
+}
+.form-acti-category {
+    display: flex;
+}
+.form-category {
+    display: flex;
+    align-items:center;
+    margin: 0 0.5rem;
+}
+.form-category label{
+    font-size: 13px;
+    margin-right: 0.25rem;
+}
+.form-category input {
+    width: 1rem;
+    height: 1rem;
+}
